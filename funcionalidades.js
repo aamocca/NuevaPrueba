@@ -18,8 +18,10 @@ function GuardarDatos(objeto){
     return EscribirJSON(arreglo);
 }
 
-function FiltrarEstado(){
-
+function FiltrarEstado(estado){
+    let arreglo= leerJSON();
+    let tareas= arreglo.filter((t,p)=> console.log(t.titulo));
+    return tareas;
 }
 
 

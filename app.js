@@ -21,6 +21,15 @@ switch(param){
         }
         GuardarDatos(objeto);
         break;
+    case "filtrar":
+        let paramF = process.argv[3]
+        FiltrarEstado(paramF);
+        break;    
+    case undefined:
+        console.log("Ingresa algo");
+        break;
+    default:
+        console.log("No se que quieres hacer")
 
 }
 
