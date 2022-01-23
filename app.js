@@ -14,7 +14,13 @@ switch(param){
         console.log(tareas)
         break;    
     case "crear":
-        
+        let paramT = process.argv[3];
+        let objeto ={
+            titulo: paramT,
+            estado: "PENDIENTE"
+        }
+        GuardarDatos(objeto);
+        break;
 
 }
 
