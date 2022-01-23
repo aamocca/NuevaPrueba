@@ -17,5 +17,8 @@ function GuardarDatos(){
 }
 
 function FiltrarEstado(){
-    
+
 }
+
+
+module.exports={leerJSON,EscribirJSON,GuardarDatos,FiltrarEstado}
